@@ -1,5 +1,4 @@
 # cloud-ia-portfolio
-# cloud-ia-portfolio
 
 Ruta Cloud IA Remoto — labs AWS hacia portfolio para trabajo remoto.
 
