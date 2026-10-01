@@ -30,7 +30,7 @@ S3: cloud-ia-portfolio-pepe-135110952623
 
 ### IAM y seguridad
 - Root con MFA
-- Usuario `pepe` con acceso amplio de lab (`AdministratorAccess` por ahora; endurecer después)
+- pepe ahora usa CloudIaPortfolioLab (sin Admin).
 - Budget ~$10
 - Secreto solo demo; **nunca** keys reales en el repo
 
