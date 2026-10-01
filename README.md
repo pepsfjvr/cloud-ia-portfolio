@@ -15,7 +15,7 @@ Cliente → API Gateway → Lambda hola-portfolio
 EventBridge (schedule, ahora Disabled) → Lambda
 Producer (consola) → SQS hola-cola-lab → Consumer (Poll)
 Secrets Manager: demo/api-key-lab
-S3: cloud-ia-portfolio-pepe-…
+S3: cloud-ia-portfolio-pepe-135110952623
 
 ### Recursos
 | Servicio | Nombre | Notas |
@@ -36,7 +36,7 @@ S3: cloud-ia-portfolio-pepe-…
 
 ### Fallos / lecciones
 1. Región por defecto del CLI ≠ región del secreto → usar `--region us-east-1`
-2. No dejar EventBridge Enabled tras el lab (diparo de costo)
+2. No dejar EventBridge Enabled tras el lab (disparo de costo)
 3. En Secrets Manager, errores de RDS/Redshift/DocumentDB se pueden ignorar con other type of secret
 
 ### Coste
