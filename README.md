@@ -38,6 +38,7 @@ S3: cloud-ia-portfolio-pepe-135110952623
 1. Región por defecto del CLI ≠ región del secreto → usar `--region us-east-1`
 2. No dejar EventBridge Enabled tras el lab (disparo de costo)
 3. En Secrets Manager, errores de RDS/Redshift/DocumentDB se pueden ignorar con other type of secret
+4. Lambda necesita GetSecretValue en su execution role; región del cliente boto3 debe coincidir con el secreto
 
 ### Coste
 Budget + Free Tier / créditos; apagar schedules; no subir datos sensibles.
