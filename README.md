@@ -26,7 +26,7 @@ S3: cloud-ia-portfolio-pepe-135110952623
 | CloudWatch Logs | `/aws/lambda/hola-portfolio` | START/END/REPORT |
 | EventBridge | `hola-cada-5min` | schedule → Lambda; **Disabled** |
 | SQS | `hola-cola-lab` | send/receive + delete |
-| Secrets Manager | `demo/api-key-lab` | key `api_key` (valor demo) |
+| Secrets Manager | `demo/api-key-lab` | key api_key (demo); Lambda hola-portfolio lo lee con boto3 (solo preview) |
 
 ### IAM y seguridad
 - Root con MFA
@@ -42,3 +42,6 @@ S3: cloud-ia-portfolio-pepe-135110952623
 
 ### Coste
 Budget + Free Tier / créditos; apagar schedules; no subir datos sensibles.
+
+### Extra — Lambda + Secrets (10B)
+`hola-portfolio` usa `secretsmanager:GetSecretValue` sobre `demo/api-key-lab` y responde solo un preview (`sk-demo…`), sin loguear la key completa.
